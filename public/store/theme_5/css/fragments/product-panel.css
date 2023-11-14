@@ -1,0 +1,138 @@
+.product-panel {
+	margin-top: 0pt;
+	max-width: 960pt;
+}
+
+.product-card {
+	box-shadow: 0 2pt 8pt rgba(0, 0, 0, 0.1);
+	border-radius: 0;
+}
+
+.product-card > img {
+	height: 100pt;
+	object-fit: contain;
+	margin-bottom: 12pt;
+}
+
+.flex-col {
+	display: flex;
+	flex-direction: column;
+}
+
+.product-card .price {
+	font-family: 'DM Sans';
+	font-size: 16pt;
+	font-weight: 500;
+	color: #455a64;
+	color: #f50057;
+}
+
+.product-card > banner {
+	height: 180pt;
+	overflow: hidden;
+	display: flex;
+	align-items: flex-start;
+	position: relative;
+	cursor: pointer;
+}
+
+.product-card img.product-img {
+	width: 100%;
+	object-fit: cover;
+	transform: translateY(0);
+	transition-property: transform;
+	transition-duration: 0.25s;
+	transition-timing-function: ease-out;
+}
+
+.product-card > content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 8pt;
+}
+
+.product-card > content > name {
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding-right: 8pt;
+	width: 100%;
+}
+
+.product-card > .price {
+	white-space: nowrap;
+	font-weight: 500;
+}
+
+.product-card .overlay {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	background: none;
+	transition-property: opacity;
+	transition-duration: 0.25s;
+	background: radial-gradient(circle, rgba(255,255,255,0) 50%, rgba(96, 125, 139, 0.25) 100%);
+	opacity: 0;
+}
+
+.product-card .image-unavailable {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: rgba(96, 125, 139, 0.5);
+	background: radial-gradient(circle, rgba(255,255,255,0) 50%, rgba(96, 125, 139, 0.25) 100%);
+	background: rgba(96, 125, 139, 0.05);
+}
+
+.product-card banner:hover .overlay {
+	opacity: 1;
+}
+
+.product-card banner:hover img.product-img {
+	transform: translateY(-10pt);
+}
+
+.panel {
+	border-radius: 4pt;
+	overflow: hidden;
+	box-shadow: 0 2pt 8pt rgba(0, 0, 0, 0.1);
+	background-color: white;
+	margin-bottom: 30pt;
+}
+
+.panel .icon {
+	width: 18pt;
+	position: relative;
+	transform: scale(1);
+	cursor: pointer;
+}
+
+.panel .icon:hover {
+	transform: scale(1.25);
+}
+
+.panel .icon:active {
+	transform: scale(1);
+}
+
+.product-card hr {
+	width: 100%;
+	margin: 4pt 0 0pt;
+	border-color: rgba(0, 0, 0, 0.05);
+}
+
+.product-panel .title {
+	margin-bottom: 16pt !important;
+	color: #37474f;
+}

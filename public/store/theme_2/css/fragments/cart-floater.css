@@ -1,0 +1,81 @@
+#cart-floater {
+	position: fixed;
+	bottom: 40pt;
+	right: 40pt;
+	z-index: 10;
+}
+
+@media (max-width: 576px) {
+	#cart-floater {
+		bottom: 20pt;
+		right: 20pt;
+	}
+}
+
+#cart-floater .cart {
+	width: 64pt;
+	height: 64pt;
+	border-radius: 50%;
+	padding: 16pt;
+	background: white;
+	box-shadow: 2pt 2pt 16pt rgba(96, 125, 139, 0.5);
+	cursor: pointer;
+	transition-property: background;
+	transition-duration: 0.25s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#cart-floater .cart:hover {
+	background: #607d8b;
+}
+
+#cart-floater .cart img {
+	transition-property: filter;
+	transition-duration: 0.25s;
+	width: 100%;
+	height: 100%;
+}
+
+#cart-floater .cart:hover img {
+	filter: brightness(0) invert(1);
+}
+
+#cart-floater .cart .badge {
+	width: 24pt;
+	height: 24pt;
+	border-radius: 50%;
+	background: #f50057;
+	color: white;
+	font-size: 12pt;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#cart-floater .badge-wrapper {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+#cart-floater .arrow-icon {
+	height: 36pt;
+	width: 36pt;
+	padding: 8pt;
+	background: #0288d1;
+	border-radius: 50%;
+	transition-property: top;
+	transition-duration: 1s;
+	transition-timing-function: ease-out;
+	position: absolute;
+}
+
+.fade-enter-active {
+	top: 10pt;
+}
+
+.fade-enter {
+	top: -60pt;
+}

@@ -1,0 +1,25 @@
+<?php
+
+return array (
+  'Hello' => 'Hello!',
+  'Regards' => 'Regards!',
+  'ResetPassword' => 'Reset Password',
+  'ResetPasswordNotification' => 'Reset Password Notification',
+  'VerifyEmailAddress' => 'Verify Email Address',
+  'VerifyYourEmailAddress' => 'Verify Your Email Address',
+  'Whoops' => 'sorry !',
+  'check_your_email' => 'Before proceeding, please check your email for a verification link.',
+  'clickButtonVerify' => 'Please click the button below to verify your email address.',
+  'copyPasteURL' => 'copy and paste the URL below into your web browser:',
+  'didNotCreateAccount' => 'If you did not create an account, no further action is required.',
+  'didNotRequestPasswordReset' => 'If you did not request a password reset, no further action is required.',
+  'failed' => 'These credentials do not match our records.',
+  'fresh_verification' => 'A new verification link has been sent to your email address.',
+  'havingTroubleClicking' => 'If you are having trouble clicking the button',
+  'minutes' => 'minutes.',
+  'not_receive' => 'If you did not receive the email',
+  'receivedPasswordReset' => 'You are receiving this email because we received a password reset request for your account.',
+  'resetLinkExpire' => 'This password reset link will expire in',
+  'send_another' => 'Click here to send another link',
+  'throttle' => 'Too many login attempts. Please try again in seconds',
+);

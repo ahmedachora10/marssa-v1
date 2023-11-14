@@ -1,0 +1,25 @@
+<?php
+
+return array (
+  'Hello' => 'bonjour',
+  'Regards' => 'avec mes salutations',
+  'ResetPassword' => 'réinitialisation du mot de passe',
+  'ResetPasswordNotification' => 'notification de réinitialisation du mot de passe',
+  'VerifyEmailAddress' => 'verification de l\'adress e-mail',
+  'VerifyYourEmailAddress' => 'Vérification de votre adresse e-mail',
+  'Whoops' => 'excusez-moi.',
+  'check_your_email' => 'avant de continuer, veuillez consulter votre courriel pour obtenir le lien de vérification.',
+  'clickButtonVerify' => 'veuillez cliquer ci-dessous pour vérifier votre adresse e-mail',
+  'copyPasteURL' => 'Copiez l\'adresse URL et collez-la dans votre navigateur Web',
+  'didNotCreateAccount' => 'si tu na pas créer un compte aucun autre action n\'est nécessaire.',
+  'didNotRequestPasswordReset' => 'si vous ne demandez pas de réinitialisation du mot de passe, aucun autre action n\'est requise.',
+  'failed' => 'les données saisies ne correspondent pas à nos enregistrements.',
+  'fresh_verification' => 'un nouveau lien de vérification a été envoyé à votre adresse e-mail.',
+  'havingTroubleClicking' => 'si vous avez un problème de clic sur le bouton',
+  'minutes' => 'une minute',
+  'not_receive' => 'Si vous n\'avez pas reçu l\'e-mail',
+  'receivedPasswordReset' => 'vous recevez ce courrier parce que nous avons reçu une demande de réinitialisation du mot de passe de votre compte',
+  'resetLinkExpire' => 'le réinitialisation du lien par mot de passe expirera pendant',
+  'send_another' => 'cliquez ici pour envoyer un notre lien.',
+  'throttle' => 'beaucoup de tentatives de connexion. veuillez réessayer dans quelques secondes.',
+);

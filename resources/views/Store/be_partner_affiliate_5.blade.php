@@ -1,0 +1,16 @@
+@extends('Store.master_5')
+@section('head')
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+@endsection
+@section('content')    
+    @include('Store.components.affilaite_partner_form')
+@endsection
+@section('script')
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"
+      defer
+    ></script>
+@endsection

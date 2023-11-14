@@ -1,0 +1,139 @@
+.product img {
+	padding: 4pt;
+}
+
+.product .preview-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: zoom-in;
+}
+
+@media(min-width: 768px) {
+	.product .preview-container {
+		min-height: 480pt;
+	}
+}
+
+.product img.preview {
+	max-width: 100%;
+}
+
+.product img.thumbnail {
+	max-width: 15%;
+	margin: 4pt;
+	cursor: pointer;
+}
+
+.img-magnifier-glass {
+	  position: absolute;
+	  pointer-events: none;
+}
+
+.product .price {
+	font-family: 'DM Sans', "Droid Arabic Kufi";
+	font-weight: 500;
+	color: #e91e63;
+	white-space: nowrap;
+}
+
+.description p {
+	margin-bottom: 1rem;
+}
+
+.description ul {
+	margin: 12pt 0 12pt;
+}
+
+.option-groups {
+	margin-bottom: 16pt;
+}
+
+.flex-row {
+	display: flex;
+	flex-direction: column;
+}
+
+.space-between {
+	justify-content: space-between;
+}
+
+.add-to-cart {
+	margin: 12pt 0 12pt;
+	padding: 12pt;
+	width: 100%;
+	border: none;
+	color: white;
+	cursor: pointer;
+	background: #546e7a;
+	outline: none !important;
+	transition-property: *;
+	transition-duration: 0.2s;
+	user-select: none;
+	border-radius: 4pt;
+}
+
+.add-to-cart:hover {
+	background: #455a64;
+}
+
+.add-to-cart.disabled {
+	pointer-events: none;
+	background: white !important;
+	color: #607d8b;
+	border: solid 1pt #b0bec5;
+}
+
+.option {
+	width: 36pt;
+	height: 36pt;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #eceff1;
+	cursor: pointer;
+	transition-property: background color transform;
+	transition-duration: 0.2s;
+	transform: translateY(0);
+	width: auto;
+	min-width: 32pt;
+	padding: 8pt;
+	margin-bottom: 8pt;
+	border: solid 1px #eceff1;
+}
+
+.option:hover {
+	background: #cfd8dc;
+	border-color: #cfd8dc;
+}
+
+.option:active {
+	transform: translateY(4pt);
+}
+
+.option.selected {
+	background: #78909c;
+	border-color: #78909c;
+	color: white;
+}
+
+.option.disabled {
+	background: white;
+	border: solid 1px rgba(207, 216, 220, 0.75);
+}
+
+.option.disabled:hover {
+	background:  rgba(207, 216, 220, 0.25);
+}
+
+.customize-label {
+	display: flex;
+	justify-content: center;
+	text-transform: uppercase;
+	color: #cfd8dc;
+	font-size: 1rem;
+}
+
+.customize-label:lang(en) {
+	letter-spacing: 0.25rem;
+}

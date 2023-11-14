@@ -1,0 +1,408 @@
+
+.header-center, .header-left, .header-right {
+    justify-content: unset;
+
+}
+.main-bar .container {
+    position: relative;
+    height: 100%;
+}
+.container {
+    max-width: 100%;
+}
+.navbar>.container, .navbar>.container-fluid {
+    justify-content: space-around;
+}
+.header-center {
+    width: unset;
+}
+@media (max-width: 1124px){
+    .desktop-bar {
+        display: none;
+    }
+    .header-center, .header-left, .header-right {
+        position: absolute;
+        top: 0;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        justify-content: center;
+        height: 100%;
+    }
+    .header-center {
+        width: 100%;
+    }
+    .nav-link2, .header-navigation ul.navigation-box > li.current > a, .header-navigation ul.navigation-box > li:hover > a, .inner-banner__title, .blog-one__image, .top-level-item {
+        color: #000000!important;
+    }
+}
+.section-TACMuZzsZ96cIf3Y {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #ffffff;
+    color: #000000;
+}.section-TACMuZzsZ96cIf3Y .heading-primary {
+    color: #000000;
+}
+
+.section-TACMuZzsZ96cIf3Y .heading-description {
+    color: #696969;
+}.section-TACMuZzsZ96cIf3Y .product-item .product-title a {
+    color: #000000;
+}
+
+.section-TACMuZzsZ96cIf3Y .product-item .product-price .before {
+    color: #D0021B;
+}
+
+.section-TACMuZzsZ96cIf3Y .product-item .product-price .after {
+    color: #4A4A4A;
+}.section-TACMuZzsZ96cIf3Y .product-item,
+.section-TACMuZzsZ96cIf3Y .product-item .product-details {
+    border-color: #f0f0f0;
+}
+
+.section-TACMuZzsZ96cIf3Y .product-item:hover,
+.section-TACMuZzsZ96cIf3Y .product-item:hover .product-details {
+    border-color: #EAB72A;
+}.section-TACMuZzsZ96cIf3Y .product-item .product-actions .button {
+    color: #17223F;
+    background-color: #EAB72A;
+    border-color: #17223F;
+}
+
+.section-TACMuZzsZ96cIf3Y .product-item .product-actions .button:hover {
+    color: #17223F;
+    background-color: #EAB72A;
+    border-color: #17223F;
+}.section-TACMuZzsZ96cIf3Y .load-more a,
+.section-TACMuZzsZ96cIf3Y .products-slider .slick-next,
+.section-TACMuZzsZ96cIf3Y .products-slider .slick-prev {
+    color: #EAB72A;
+    background-color: #17223F;
+    border-color: #000000;
+}
+
+.section-TACMuZzsZ96cIf3Y .load-more a:hover,
+.section-TACMuZzsZ96cIf3Y .products-slider .slick-next:hover,
+.section-TACMuZzsZ96cIf3Y .products-slider .slick-prev:hover {
+    color: #EAB72A;
+    background-color: #17223F;
+    border-color: #EAB72A;
+}
+.cart-item{
+    background-color: blanchedalmond;
+    border: 3px solid #eab72a;
+    border-radius: 15px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin: 5px;
+}
+.cart-item h3{
+    display: flex;
+}
+
+/************************************************************************
+*************************************************************************/
+.fr-view span{
+    font-size: 14px !important;
+    font-family: Cairo, sans-serif !important;
+}
+.header-list a{
+    color: #5e562e;
+    padding: 0 9px !important;
+    font-size: 14px;
+    font-family: Cairo, sans-serif !important;
+}
+.dropdown-menu a.dropdown-item{
+    line-height: 40px;
+    padding: 10px 28px !important;
+    border-bottom: 1px solid lightgray;
+}
+.header-list a{
+    color: #5e562e;
+    padding: 0 9px !important;
+    font-size: 14px;
+    font-family: Cairo, sans-serif !important;
+}
+.dropdown-menu a.dropdown-item{
+    line-height: 40px;
+    padding: 1px 12px 0px !important;
+    border-bottom: 1px solid lightgray;
+    font-size: 13px;
+}
+.dropdown-menu a.dropdown-item:last-child{
+    border-bottom: 0px solid lightgray;
+}
+.dropdown-menu a.dropdown-item:hover{
+    background-color:white !important;
+}
+html[dir="rtl"] .dropdown-menu a.dropdown-item{
+    text-align: right;
+}
+.dropdown-menu.other_category{
+    top: 97%;
+    border:0px solid #eee;
+    background-color: #eab72a;
+}
+.dropdown-toggle.other_category{
+    width: 161px;
+    text-align: center;
+    background-color: #ffd45c;
+}
+.side-navigation .navigation-list li a{
+    font-family: Cairo, sans-serif !important;
+}
+.app-heading .heading-primary{
+    padding: 32px;
+}
+
+.product-item .product-title a{
+    font-family: Cairo, sans-serif !important;
+    font-size: 15px;
+    line-height: 2em;
+    text-decoration: none;
+}
+.product-item .product-actions .button
+{
+    color: #17223F;
+    background-color: #EAB72A;
+    border-color: #EAB72A;
+    margin: 5px;
+    font-weight: 400;
+    font-family: Cairo, sans-serif !important;
+    box-shadow: rgb(100 100 111 / 32%) 0px 7px 29px 0px;
+}
+.product-item .product-actions .button.background_add_to_cart_button{
+    background-color: #605a55 !important;
+    color: white !important;
+    border-color: #121110 !important;
+}
+[dir] .products-slider .product-item{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.section.products-list-section.recent_products{
+    background-color: #f2f2f2;
+    padding-top:0px !important;
+    padding-bottom:0px !important;
+}
+.section.products-list-section.recent_products .products-slider .product-item{
+    background: white !important;
+}
+.section.products-list-section.recent_products svg{
+    width: 100%;
+    background: white;
+}
+.section.products-list-section.recent_products svg.bottom-svg{
+    width: 100%;
+    background: #f2f2f2;
+}
+.app-heading span{
+    font-family: Cairo, sans-serif !important;
+}
+.app-heading h2
+{
+   color: rgb(155 122 29) !important;
+   font-family: Cairo, sans-serif !important;
+}
+.footer{
+        background-color: #fff !important;
+}
+.footer .footer-body{
+    border:0px solid #eee !important;
+}
+.footer-body .grid-2{
+    text-align: center;
+}
+.footer .footer-item h3 {
+    font-size: 21px;
+    font-weight: 600;
+    color: #454242;
+}
+.row.partner-logo-container{
+    text-align: center !important;
+    margin: auto;
+}
+.social-items{
+    padding: 13px;
+}
+.social-items h4
+{
+    text-align: center !important;
+    padding: 15px;
+}
+.social-items .footer-list
+{
+    display: flex;
+    justify-content: center !important;
+}
+.footer .footer-list li a:hover{
+    color:white !important;
+}
+
+.footer .footer-list li a{
+    font-family: Cairo, sans-serif !important;
+}
+
+
+/*****************************************************************************
+*******************************************************************************/
+.single-product .product-wrapper .product-details{
+    padding: 55px 55px 0px 0px !important;
+}
+.single-description li {
+    font-family: Cairo, sans-serif !important;
+    font-size: 15px !important;
+    line-height: 2.5em !important;
+}
+.single-title{
+    font-size: 29px !important;
+    font-weight:400 !important;
+}
+.single-product .single-submit{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px !important;
+
+}
+#review-container .app-heading h3.heading-primary{
+    display: inline-table;
+    padding: 9px;
+    text-align: right;
+}
+#review-container .app-heading{
+    text-align: right;
+    background-color: #ecf2f6;
+    padding:20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+#review-container .review-button
+{
+    float:left;
+    background-color:#2c2c2b !important;
+}
+#review-container .app-heading-2
+{
+    width: 100%;
+    padding: 18px;
+    text-align:center;
+}
+#review-container .app-heading-2 span
+{
+    font-family: Cairo, sans-serif !important;
+    color: black !important;
+    line-height: 2.5em !important;
+    font-size: 21px !important;
+    color: black !important;
+    font-weight: 600;
+}
+#submit_review .background_buy_now_button {
+    background-color:#2c2c2b !important;
+    padding: 12px;
+}
+/*******************************************************************************
+*******************************************************************************/
+.checkout-section .app-heading .heading-primary{
+     line-height: 0px;
+     text-align: center;
+}
+.checkout-section .app-heading p.heading-primary{
+    font-family: Cairo, sans-serif !important;
+    text-align: center;
+}
+.create-order-form .form-group label
+{
+    font-family: Cairo, sans-serif !important;
+    color: #b03760;
+}
+.checkout-section .checkout > .sidebar{
+    box-shadow: rgb(0 0 0 / 25%) 0px 25px 50px -12px;
+    background: #ffffff;
+    padding:20px;
+}
+.all-in-one-header .input-group{
+    padding: 15px;
+}
+.all-in-one-header .input-group .fa-hand-point-right
+{
+    color: #856a19 !important;
+    font-size: 35px;
+    padding: 1px 8px 0px 4px;
+}
+.checkout .main .tab-content{
+    background-color: #fff;
+    padding: 27px;
+    border: 4px solid #e8e2d0;
+}
+.create-order-form select.form-control ,
+.create-order-form input.form-control {
+    border: 1px solid #b5b5b5 !important;
+    height: 50px;
+    border-radius: 0px 0px 0px 0px !important;
+}
+.order-process{
+    background-color: #383c3d !important;
+    margin: auto !important;
+    width: auto !important;
+    padding: 9px 52px !important;
+    border-radius: 0px !important;
+    font-family: Cairo, sans-serif !important;
+}
+.nav-tabs .nav-link{
+    border-width: 0px;
+}
+.nav-tabs .nav-link.show {
+    color: #495057;
+    background-color: #e8e2d0 !important;
+    border-color: #e8e2d0 !important;
+    border-width: 3px;
+    border-bottom: 0px solid white;
+    border-radius: 0px;
+    margin-bottom: -2px;
+}
+.Select_one_of_payment{
+    padding:10px;
+
+}
+.Select_one_of_payment strong{
+    font-family: Cairo, sans-serif !important;
+}
+.btn-info
+{
+    background-color: transparent !important;
+    border-color: transparent !important;
+    color: black !important;
+}
+
+html[dir="ltr"] .aside-total-details li{
+    direction: ltr !important;
+}
+/*****************************************************************************
+*******************************************************************************/
+@media(max-width:1124px){
+    .app-heading h2
+    {
+        font-size: 22px;
+    }
+    .fr-view span {
+        font-size: 12px !important;
+    }
+    .desktop-bar {
+       display: none !important;
+    }
+    #review-container .review-button{
+        font-size: 14px;
+    }
+    #review-container .lead{
+        padding: 30px;
+    }
+    .checkout-section .app-heading p.heading-primary{
+        line-height:1.5em;
+    }
+    .Select_one_of_payment{
+        text-align:center;
+    }
+    .background_check_out_buy_now_button{
+            height: auto !important;
+    }
+}

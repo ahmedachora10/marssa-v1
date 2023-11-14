@@ -1,0 +1,21 @@
+/* Localized Spacing Utilities */
+
+.mrx-1:lang(en), .mlx-1:lang(ar) {margin-right: 0.25rem;}
+.mrx-2:lang(en), .mlx-2:lang(ar) {margin-right: 0.50rem;}
+.mrx-3:lang(en), .mlx-3:lang(ar) {margin-right: 0.75rem;}
+.mrx-4:lang(en), .mlx-4:lang(ar) {margin-right: 1.00rem;}
+
+.mlx-1:lang(en), .mrx-1:lang(ar) {margin-left : 0.25rem;}
+.mlx-2:lang(en), .mrx-2:lang(ar) {margin-left : 0.50rem;}
+.mlx-3:lang(en), .mrx-3:lang(ar) {margin-left : 0.75rem;}
+.mlx-4:lang(en), .mrx-4:lang(ar) {margin-left : 1.00rem;}
+
+.prx-1:lang(en), .plx-1:lang(ar) {padding-right: 0.25rem;}
+.prx-2:lang(en), .plx-2:lang(ar) {padding-right: 0.50rem;}
+.prx-3:lang(en), .plx-3:lang(ar) {padding-right: 0.75rem;}
+.prx-4:lang(en), .plx-4:lang(ar) {padding-right: 1.00rem;}
+
+.plx-1:lang(en), .prx-1:lang(ar) {padding-left : 0.25rem;}
+.plx-2:lang(en), .prx-2:lang(ar) {padding-left : 0.50rem;}
+.plx-3:lang(en), .prx-3:lang(ar) {padding-left : 0.75rem;}
+.plx-4:lang(en), .prx-4:lang(ar) {padding-left : 1.00rem;}
