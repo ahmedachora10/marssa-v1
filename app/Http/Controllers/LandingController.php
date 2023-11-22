@@ -156,8 +156,8 @@ class LandingController extends Controller
     protected function create_log()
     {
         $ips = request()->ip();
-        dd($ips);
-        $position = FacadeIP2LocationLaravel::get($ips);
+        $position = FacadeIP2LocationLaravel::get($ips, 'bin');
+        dd($position);
         $agent = new Agent();
 
         $device = $agent->device();
