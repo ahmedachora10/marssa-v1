@@ -20,7 +20,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use App\Models\Visitors;
 use App\Models\User;
-use Ip2location\IP2LocationLaravel\Facade\IP2LocationLaravel as ;
+use Ip2location\IP2LocationLaravel\Facade\IP2LocationLaravel as FacadeIP2LocationLaravel;
 
 class LandingController extends Controller
 {
@@ -99,9 +99,9 @@ class LandingController extends Controller
 
     public function show_page($page)
     {
-        $page = ModelsModelsPage::whereLink($page)->first();
+        $page = Page::whereLink($page)->first();
         if ($page) {
-            $pages =  ModelsModelsPage::whereStoreId('1')->get();
+            $pages =  Page::whereStoreId('1')->get();
             $information = ModelsUser::role('SuperAdmin')->first()->store()->first()->information()->first();
             $head_data = [
                 'title_ar' => $page['title_ar'],
