@@ -2,21 +2,25 @@
 
 namespace App\Http\Controllers;
 
-use App\Counter;
-use App\Section;
-use App\Features;
-use App\Models;
-use App\Plan;
-use App\Page;
-use App\Feedback;
-use App\Contact;
-use IP2LocationLaravel;
+use App\Models\Counter;
+use App\Models\Section;
+use App\Models\Features;
+use App\Models\Models;
+use App\Models\Plan;
+use App\Models\Page;
+use App\Models\Feedback;
+use App\Models\Contact;
+use App\Models\Contact as ModelsContact;
+use App\Models\Features as ModelsFeatures;
+use App\Models\Page as ModelsPage;
+use App\Models\Plan as ModelsPlan;
+use App\Models\User as ModelsUser;
 use Jenssegers\Agent\Agent;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
-use App\Visitors;
-use App\User;
-use Ip2location\IP2LocationLaravel\Facade\IP2LocationLaravel as FacadeIP2LocationLaravel;
+use App\Models\Visitors;
+use App\Models\User;
+use Ip2location\IP2LocationLaravel\Facade\IP2LocationLaravel as ;
 
 class LandingController extends Controller
 {
@@ -28,9 +32,9 @@ class LandingController extends Controller
     public function index()
     {
         $models = Models::all();
-        $plans = Plan::all();
-        $features = Features::all();
-        $pages = Page::whereStoreId('1')->get();
+        $plans = ModelsPlan::all();
+        $features = ModelsFeatures::all();
+        $pages = ModelsPage::whereStoreId('1')->get();
         $feedback = Feedback::all()->shuffle()->take(4);
         $counters = Counter::all();
         $information = User::role('SuperAdmin')->first()->store()->first()->information()->first();
@@ -69,8 +73,8 @@ class LandingController extends Controller
 
     public function pricing()
     {
-        $information = User::role('SuperAdmin')->first()->store()->first()->information()->first();
-        $pages = Page::whereStoreId('1')->get();
+        $information = ModelsUser::role('SuperAdmin')->first()->store()->first()->information()->first();
+        $pages = ModelsPage::whereStoreId('1')->get();
         $head_data = [
             'title_ar' => $information['title_page_ar'] . ' - ' . __('site.pricing'),
             'title_en' => $information['title_page_en'] . ' - ' . __('site.pricing'),
@@ -83,7 +87,7 @@ class LandingController extends Controller
             'keyword_fr' => $information['keyword_fr'],
             'icon' => $information['preview'],
         ];
-        $plans = Plan::all();
+        $plans = ModelsPlan::all();
         $context = [
             'head_data' => $head_data,
             'plans' => $plans,
@@ -95,10 +99,10 @@ class LandingController extends Controller
 
     public function show_page($page)
     {
-        $page = Page::whereLink($page)->first();
+        $page = ModelsModelsPage::whereLink($page)->first();
         if ($page) {
-            $pages =  Page::whereStoreId('1')->get();
-            $information = User::role('SuperAdmin')->first()->store()->first()->information()->first();
+            $pages =  ModelsModelsPage::whereStoreId('1')->get();
+            $information = ModelsUser::role('SuperAdmin')->first()->store()->first()->information()->first();
             $head_data = [
                 'title_ar' => $page['title_ar'],
                 'title_en' => $page['title_en'],
@@ -137,7 +141,7 @@ class LandingController extends Controller
         $referer = str_replace('https://', '', $referer);
         $referer = str_replace('http://', '', $referer);
         $referer = substr($referer, -1) === '/' ? substr($referer, 0, -1) : $referer;
-        $new_contact = Contact::create([
+        $new_contact = ModelsContact::create([
             'name' => $request->all()['name'],
             'email' => $request->all()['email'],
             'content' => $request->all()['content'],
@@ -152,6 +156,7 @@ class LandingController extends Controller
     protected function create_log()
     {
         $ips = request()->ip();
+        dd($ips);
         $position = FacadeIP2LocationLaravel::get($ips);
         $agent = new Agent();
 
