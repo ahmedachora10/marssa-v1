@@ -37,12 +37,12 @@ class LandingController extends Controller
         $pages = ModelsPage::whereStoreId('1')->get();
         $feedback = Feedback::all()->shuffle()->take(4);
         $counters = Counter::all();
-        $information = User::role('SuperAdmin')->first()->store()->first()->information()->first();
+        $information = User::role('SuperAdmin')->first()?->store()->first()?->information()->first();
 
         $section = [
-            'models_stores' => Section::whereType('models_stores')->first()->status ?? 0,
-            'features_platform' => Section::whereType('features_platform')->first()->status ?? 0,
-            'feedback' => Section::whereType('feedback')->first()->status ?? 0,
+            'models_stores' => Section::whereType('models_stores')->first()?->status ?? 0,
+            'features_platform' => Section::whereType('features_platform')->first()?->status ?? 0,
+            'feedback' => Section::whereType('feedback')->first()?->status ?? 0,
         ];
         $head_data = [
             'title_ar' => $information['title_page_ar'] . ' - ' . __('site.main_menu'),
