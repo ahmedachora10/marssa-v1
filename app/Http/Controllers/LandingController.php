@@ -20,13 +20,13 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use App\Models\Visitors;
 use App\Models\User;
-use Ip2location\IP2LocationLaravel\Facade\IP2LocationLaravel as FacadeIP2LocationLaravel;
+use Ip2location\IP2LocationLaravel\Facade\IP2LocationLaravel;
 
 class LandingController extends Controller
 {
     public function __construct()
     {
-        $this->create_log();
+        // $this->create_log();
     }
 
     public function index()
@@ -156,8 +156,8 @@ class LandingController extends Controller
     protected function create_log()
     {
         $ips = request()->ip();
-        $position = FacadeIP2LocationLaravel::get($ips, 'bin');
-        dd($position);
+        $position = IP2LocationLaravel::get($ips, 'bin');
+
         $agent = new Agent();
 
         $device = $agent->device();
