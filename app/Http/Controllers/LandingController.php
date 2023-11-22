@@ -16,6 +16,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use App\Visitors;
 use App\User;
+use Ip2location\IP2LocationLaravel\Facade\IP2LocationLaravel as FacadeIP2LocationLaravel;
 
 class LandingController extends Controller
 {
@@ -150,8 +151,8 @@ class LandingController extends Controller
 
     protected function create_log()
     {
-        $ips = \Request::ip();
-        $position = IP2LocationLaravel::get($ips);
+        $ips = request()->ip();
+        $position = FacadeIP2LocationLaravel::get($ips);
         $agent = new Agent();
 
         $device = $agent->device();
